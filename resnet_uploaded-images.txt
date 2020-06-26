@@ -1,0 +1,72 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   Shirt_01.jpg  label:                      shirt
+ 2 key:                  Poodle_02.jpg  label:                     poodle
+ 3 key:                  Pigeon_01.jpg  label:                     pigeon
+ 4 key:                  Poodle_01.jpg  label:                     poodle
+
+     MATCH:
+
+                  Shirt_01.jpg: 
+Real:                      shirt   Classifier:     jersey, t-shirt, tee shirt
+
+                 Poodle_02.jpg: 
+Real:                     poodle   Classifier:               miniature poodle
+
+                 Poodle_01.jpg: 
+Real:                     poodle   Classifier:               miniature poodle
+
+ NOT A MATCH:
+
+                 Pigeon_01.jpg: 
+Real:                     pigeon   Classifier:            water ouzel, dipper
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+                  Shirt_01.jpg: 
+Real:                      shirt   Classifier:     jersey, t-shirt, tee shirt  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                 Poodle_02.jpg: 
+Real:                     poodle   Classifier:               miniature poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Poodle_01.jpg: 
+Real:                     poodle   Classifier:               miniature poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                 Pigeon_01.jpg: 
+Real:                     pigeon   Classifier:            water ouzel, dipper  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 75.0
+pct_correct_dogs    : 100.0
+pct_correct_breed   : 100.0
+pct_correct_notdogs : 100.0
+
+** Total Elapsed Runtime: 0:0:0
